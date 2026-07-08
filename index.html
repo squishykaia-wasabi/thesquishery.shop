@@ -355,11 +355,6 @@ footer{text-align:center; padding:34px 0 46px; margin-top:34px; border-top:1px s
 </div>
 </section>
 
-<section class="signup">
-<p class="eyebrow">join the club</p><h2>stay in the loop</h2>
-<p>be the first to know about new drops and deals.</p>
-<div class="form"><input type="email" placeholder="your email" aria-label="email address"/><button type="button" onclick="this.textContent='thank you!'">sign up</button></div>
-</section>
 
 
 </main>
@@ -514,7 +509,7 @@ function renderCart(){
   if(disc>0) h+='<div class="row deal"><span>buy 3, get 1 (50% off)</span><span>-'+money(disc)+'</span></div>';
   h+='<div class="row total"><span>total</span><span>'+money(subv-disc)+'</span></div>';
   h+='<div class="pay-title">how would you like to pay?</div><div class="pay-opts">'+
-     ['cash','apple pay','venmo'].map(function(m){return '<button class="pay-opt'+(payMethod===m?' sel':'')+'" data-m="'+m+'">'+m+'</button>';}).join('')+'</div>';
+     ['cash','venmo'].map(function(m){return '<button class="pay-opt'+(payMethod===m?' sel':'')+'" data-m="'+m+'">'+m+'</button>';}).join('')+'</div>';
   h+='<button class="checkout-btn" id="checkoutBtn"'+(payMethod?'':' disabled')+'>checkout</button>';
   sum.innerHTML=h;
   sum.querySelectorAll('.pay-opt').forEach(function(b){ b.addEventListener('click', function(){ payMethod=b.getAttribute('data-m'); renderCart(); }); });
