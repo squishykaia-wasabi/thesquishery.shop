@@ -54,4 +54,4 @@ It can take a little while (sometimes up to a day) for the domain to fully conne
 - **Order phone numbers are blank on purpose.** Don't add a real phone number to a public website without a parent's okay — it's a privacy thing.
 - **No real money is taken yet.** When you're ready to truly sell, set up a proper payment method (like Shopify, Etsy, Square, or a parent-controlled PayPal/Venmo) with a grown-up.
 
-Good luck, boss! 💕 
+Good luck, boss! 💕
